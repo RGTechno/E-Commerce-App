@@ -34,7 +34,9 @@ class _AppState extends State<App> {
     setState(() {
       _pageController.animateToPage(
         pageIndex,
-        duration: Duration(milliseconds: 300,),
+        duration: Duration(
+          milliseconds: 300,
+        ),
         curve: Curves.easeInOut,
       );
     });
@@ -59,12 +61,21 @@ class _AppState extends State<App> {
         selectedFontSize: 14,
         showSelectedLabels: false,
         selectedIconTheme: IconThemeData(size: 40),
+        selectedItemColor: Theme.of(context).accentColor,
+        unselectedItemColor: Theme.of(context).primaryColor,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.favorite), label: "Wishlist"),
+            icon: Icon(Icons.home),
+            label: "Home",
+          ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle), label: "Account"),
+            icon: Icon(Icons.favorite),
+            label: "Wishlist",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_circle),
+            label: "Account",
+          ),
         ],
       ),
     );

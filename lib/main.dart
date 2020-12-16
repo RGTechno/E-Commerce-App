@@ -13,11 +13,21 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-
-        primarySwatch: Colors.blue,
+        textTheme: TextTheme(
+          headline1: TextStyle(color: Colors.white),
+          headline2: TextStyle(
+            color: Color.fromRGBO(253, 240, 96, 1),
+          ),
+        ),
+        accentColor: Color.fromRGBO(253, 240, 96, 1),
+        primaryColor: Color.fromRGBO(133, 24, 217, 1),
+        appBarTheme: AppBarTheme(
+          actionsIconTheme: IconThemeData(
+            color: Colors.white,
+          ),
+        ),
       ),
       home: App(),
     );
   }
 }
-
