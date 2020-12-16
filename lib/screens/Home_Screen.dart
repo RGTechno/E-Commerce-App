@@ -1,3 +1,4 @@
+import 'package:e_commerce_sample/widgets/AppBar.dart';
 import 'package:e_commerce_sample/widgets/Drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -6,21 +7,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: AppDrawer(),
-      appBar: AppBar(
-        title: Text("Shopy"),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.notifications),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.shopping_cart,
-            ),
-          )
-        ],
-      ),
+      appBar: Header(context),
       body: Center(
         child: Text("Home"),
       ),
