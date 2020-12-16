@@ -60,7 +60,7 @@ class _AppState extends State<App> {
         onTap: onTap,
         selectedFontSize: 14,
         showSelectedLabels: false,
-        selectedIconTheme: IconThemeData(size: 40),
+        selectedIconTheme: IconThemeData(size: 45),
         selectedItemColor: Theme.of(context).accentColor,
         unselectedItemColor: Theme.of(context).primaryColor,
         items: [
