@@ -57,6 +57,8 @@ class _AppState extends State<App> {
         currentIndex: pageIndex,
         onTap: onTap,
         selectedFontSize: 14,
+        showSelectedLabels: false,
+        selectedIconTheme: IconThemeData(size: 40),
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(
