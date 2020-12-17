@@ -8,6 +8,7 @@ class ImageCarousel extends StatelessWidget {
       height: 200.0,
       width: double.infinity,
       child: Carousel(
+        boxFit: BoxFit.cover,
         images: [
           NetworkImage(
             "https://www.datafeedwatch.com/hs-fs/hubfs/ebooks-images/amazon-sales-ebook-cover.png?width=570&height=380&name=amazon-sales-ebook-cover.png",
@@ -23,7 +24,6 @@ class ImageCarousel extends StatelessWidget {
         noRadiusForIndicator: true,
         dotSpacing: 15.0,
         dotColor: Theme.of(context).accentColor,
-        boxFit: BoxFit.cover,
         indicatorBgPadding: 5.0,
         dotIncreasedColor: Theme.of(context).primaryColor,
         animationCurve: Curves.easeOut,

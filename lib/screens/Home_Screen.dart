@@ -5,6 +5,14 @@ import '../widgets/ImageCarousel.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
+  final List<Map> categories = [
+    {"title": "Electronics", "color": Colors.orange},
+    {"title": "Fashion", "color": Colors.greenAccent},
+    {"title": "Home", "color": Colors.redAccent},
+    {"title": "ArtWork", "color": Colors.cyanAccent},
+    {"title": "Mobiles", "color": Colors.blueAccent},
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,28 +25,14 @@ class HomeScreen extends StatelessWidget {
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
-                    children: [
-                      Category(
-                        color: Colors.orange,
-                        title: "Electronics",
-                      ),
-                      Category(
-                        color: Colors.greenAccent,
-                        title: "Fashion",
-                      ),
-                      Category(
-                        color: Colors.redAccent,
-                        title: "Home",
-                      ),
-                      Category(
-                        color: Colors.cyanAccent,
-                        title: "ArtWork",
-                      ),
-                      Category(
-                        color: Colors.blueAccent,
-                        title: "Mobiles",
-                      ),
-                    ],
+                    children: categories
+                        .map(
+                          (cate) => Category(
+                            title: cate["title"],
+                            color: cate["color"],
+                          ),
+                        )
+                        .toList(),
                   ),
                 ),
                 ImageCarousel(),
