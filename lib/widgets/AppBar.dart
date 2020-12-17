@@ -41,12 +41,12 @@ AppBar appHeader(BuildContext context) {
     actions: [
       IconButton(
         onPressed: () {},
-        icon: Icon(Icons.notifications),
+        icon: Icon(Icons.notifications_outlined),
       ),
       IconButton(
         onPressed: () {},
         icon: Icon(
-          Icons.shopping_cart,
+          Icons.shopping_cart_outlined,
         ),
       )
     ],
