@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DealItem extends StatelessWidget {
   final Color color;
@@ -23,8 +24,14 @@ class DealItem extends StatelessWidget {
             color: color,
           ),
         ),
-        Text(title),
-        Text("Rs $price"),
+        Text(
+          title,
+          style: GoogleFonts.montserrat(),
+        ),
+        Text(
+          "Rs $price",
+          style: GoogleFonts.montserrat(),
+        ),
       ],
     );
   }
