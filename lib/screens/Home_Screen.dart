@@ -1,5 +1,6 @@
 import 'package:e_commerce_sample/widgets/AppBar.dart';
 import 'package:e_commerce_sample/widgets/Category.dart';
+import 'package:e_commerce_sample/widgets/Deals.dart';
 import 'package:e_commerce_sample/widgets/Drawer.dart';
 import 'package:e_commerce_sample/widgets/new_Product.dart';
 import '../widgets/ImageCarousel.dart';
@@ -38,6 +39,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 ImageCarousel(),
                 NewProduct(),
+                Deals(),
               ],
             ),
           ),
