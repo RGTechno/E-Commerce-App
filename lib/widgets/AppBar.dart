@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 AppBar appHeader(BuildContext context) {
   final appBar = AppBar(
-    title: Text("Shopy"),
+    title: Text(
+      "Shopy",
+      style: GoogleFonts.montserrat(
+        fontWeight: FontWeight.bold,
+      ),
+    ),
     bottom: PreferredSize(
       child: Container(
         child: Padding(
@@ -48,7 +55,7 @@ AppBar appHeader(BuildContext context) {
         icon: Icon(
           Icons.shopping_cart_outlined,
         ),
-      )
+      ),
     ],
   );
   return appBar;
