@@ -19,7 +19,7 @@ class Deals extends StatelessWidget {
               padding: const EdgeInsets.all(15.0),
               child: Text(
                 "Deals",
-                style: GoogleFonts.gafata(
+                style: GoogleFonts.raleway(
                   fontSize: 27,
                   fontWeight: FontWeight.bold,
                 ),

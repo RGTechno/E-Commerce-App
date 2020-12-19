@@ -14,25 +14,29 @@ class DealItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          height: 100,
-          width: 100,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15),
-            color: color,
+    return InkWell(
+      onTap: () {},
+      splashColor: Theme.of(context).accentColor,
+      child: Column(
+        children: [
+          Container(
+            height: 100,
+            width: 100,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+              color: color,
+            ),
           ),
-        ),
-        Text(
-          title,
-          style: GoogleFonts.montserrat(),
-        ),
-        Text(
-          "Rs $price",
-          style: GoogleFonts.montserrat(),
-        ),
-      ],
+          Text(
+            title,
+            style: GoogleFonts.montserrat(),
+          ),
+          Text(
+            "Rs $price",
+            style: GoogleFonts.montserrat(),
+          ),
+        ],
+      ),
     );
   }
 }
